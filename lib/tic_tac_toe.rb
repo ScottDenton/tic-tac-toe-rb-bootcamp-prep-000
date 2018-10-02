@@ -133,10 +133,12 @@ end
 
 
 def play(board)
-if !over?(board)  do
+while !over?(board)  do
+  current_player(board)
   turn(board)
 end
-else winner(board)
+if won?(board)
+  puts "Yay you won #{winner(board)}"
   end
 end
 
