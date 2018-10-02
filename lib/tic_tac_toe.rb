@@ -35,13 +35,7 @@ def turn(board)
   end
 end
 
-def play(board)
-counter = 0 
-  while counter < 9
-  turn(board)
-  counter += 1
-  end
-end
+
 
 def turn_count(board)
   turn = 0 
@@ -137,6 +131,14 @@ else
   return nil
 end
 
+
+def play(board)
+if !over?  do
+  turn(board)
+end
+else winner(board)
+  end
+end
 
 
 
