@@ -139,6 +139,8 @@ while !over?(board)  do
 end
 if won?(board)
   puts "Yay you won #{winner(board)}"
+else
+  puts "Cat's Game!"
   end
 end
 
