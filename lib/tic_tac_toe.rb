@@ -133,7 +133,7 @@ end
 
 
 def play(board)
-if !over?  do
+if !over?(board)  do
   turn(board)
 end
 else winner(board)
